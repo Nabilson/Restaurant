@@ -1,0 +1,248 @@
+
+body {
+	font-family: 'Oxygen', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	background-color: maroon;}
+
+#header-nav {
+background-color: #f6b319;
+border-radius: 0;
+border:0;
+}
+
+#logo-img {
+	background: url('panda-express.jpg') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 0px 15px 10px 0px;
+	float: left;
+}
+.navbar-brand h1{
+	margin-top: 0px;
+}
+.navbar-brand h1, .navbar-brand a:hover, .navbar-brand a:focus {
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+}
+#nav-list a:hover{
+	background: #E7E7E7;
+}
+#nav-list a{
+	font-size: 1em;
+}
+.navbar-header button.navbar-toggle {
+	clear: both;
+}
+.container .jumbotron {
+	padding: 0px;
+}
+#menu-tile, #specials-tile, #map-tile {
+height: 250px;
+width: 100%;
+margin-bottom: 15px;
+position: relative;
+border: 2px solid #3F0C1F;
+overflow: hidden;
+}
+#menu-tile:hover,  #specials-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-tile{
+	background: url(akara.jpg) no-repeat;
+	background-position: center;
+}
+#specials-tile{
+	background: url(akara.jpg) no-repeat;
+	background-position: center;
+}
+#menu-tile span,  #specials-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 1em;
+	opacity: .8;
+	background-color: black;
+}
+
+@media (min-width: 1200px) {
+	.container .jumbotron{
+		background: url(15915_EastPlaceChineseRestaurant.jpg) no-repeat;
+		height: 675px;
+		box-shadow: 0 0 50px #3F0C1F;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#logo-img{
+		background: url('panda-express_sm.jpg') no-repeat;
+		width: 100px;
+		height: 100px;
+		margin: 14px 5px 5px 0px;
+		
+	}
+.container .jumbotron{
+		background: url(resto-interior_md.jpg) no-repeat;
+		height: 675px;
+		box-shadow: 0 0 50px #3F0C1F;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.container .jumbotron{
+		background: url(resto-interior_xs.jpg) no-repeat;
+		height: 552px;
+		box-shadow: 0 0 50px #3F0C1F;
+	}
+}
+
+@media (max-width: 767px) {
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+	.navbar-brand h1{
+		padding-top: 10px;
+		font-size: 5vw;
+	}
+	.navbar-brand p {
+		text-transform: uppercase;
+		font-size: .6em;
+		margin-top: 12px;
+	}
+	.navbar-brand p img {
+		height: 20px;
+	}
+	.container .jumbotron{
+		padding: 0px;
+	}
+	#menu-tile,  #specials-tile, #map-tile{
+		width: 373px;
+		margin: 0 auto 15px auto;
+		}
+	.panel-footer{ text-align: center; }
+	.panel-footer div hr { width: 50%; }
+
+	.menu-item-photo {
+		margin-left: auto !important ;
+		margin-right: auto !important ;
+	}
+	.menu-item-price {
+		text-align: center !important;
+	}
+	.menu-item-description{
+		text-align: center !important;
+	}
+} 
+
+@media (max-width:479px) {
+	.col-xxs-12 {
+		width: 100%;
+		float: left;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+
+#hours, #address {
+	line-height: 2;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8;
+}
+#testimonials {
+	font-style: italic;
+}
+#testimonials p:nth-child(2) {
+	margin-top: 25px;
+}
+.category-title {
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+}
+.category-title span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.2em;
+	background-color: #000;
+	color: #fff;
+	opacity: .8;
+}
+.category-title:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+#menu-categories-tile +div {
+	margin-bottom: 50px;
+}
+.menu-item-tile{
+	margin-bottom: 25px;
+}
+.menu-item-tile hr {
+	width: 80%;
+}
+.menu-item-tile .menu-item-price {
+	font-size: 1em;
+	text-align: right;
+	margin-top: -17.5px;
+	margin-right: -15px;
+
+}
+.menu-item-tile .menu-item-price span {
+	font-size: .6em;
+}
+.menu-item-photo{
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width: 250px;
+}
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 80px;
+	background-color: #557c3e;
+	text-align: center;
+}
+.menu-item-description {
+	padding-right: 30px;
+}
+h3.menu-item-title{
+	margin: 0 0 10px;
+}
+.menu-item-details{
+	font-size: .9em;
+	font-style: italic;
+}
