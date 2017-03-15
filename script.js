@@ -31,9 +31,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
 	homeHtml,
-	function (responseText) {
+	function (request) {
 		document.querySelector("#main-content")
-			.innerHTML = responseText;
+			.innerHTML = request.responseText;
 	},
 	false);
 	console.log(responseText);
