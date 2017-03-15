@@ -36,7 +36,7 @@ $ajaxUtils.sendGetRequest(
 			.innerHTML = responseText;
 	},
 	false);
-	console.log(responseText);
+	console.log("flafleflu");
 });
 
 global.$dc = dc;
