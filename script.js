@@ -14,7 +14,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"..)
 	var dc = {};
 	var homeHtml = "snippets/home-snippet.html";
 
-	var insertHtml = function(selector, html) {
+	var insertHtml = function (selector, html) {
 		var targetElem = document.querySelector(selector);
 		targetElem.innerHTML = html;
 	};
@@ -26,7 +26,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"..)
 	};
 
 // On first load, show home view
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
 
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
@@ -36,6 +36,7 @@ $ajaxUtils.sendGetRequest(
 			.innerHTML = responseText;
 	},
 	false);
+	console.log(responseText);
 });
 
 global.$dc = dc;
