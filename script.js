@@ -90,9 +90,10 @@ function buildAndShowCategoriesHTML (categories, categoriesTitleHtml, categoryHt
 		finalHtml += html;
 	}
 
-	finalHtml +="</section>"
-	return finalHtml
+	finalHtml +="</section>";
+	return finalHtml;
 }
 
 global.$dc = dc;
+
 })(window);
