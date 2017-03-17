@@ -14,8 +14,8 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"..)
 	var dc = {};
 	var homeHtml = "snippets/home-snippet.html";
 	var allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
-	var categoriesTitleHtml = "snippets/categories-title-snippet.html";
-	var categoryHtml = "snippets/Category-snippet.html"
+	var categoriesTitleHtml = "categories-title-snippet.html";
+	var categoryHtml = "Category-snippet.html"
 	
 	//convenience function for inserting innerHTML for 'select'
 	var insertHtml = function (selector, html) {
