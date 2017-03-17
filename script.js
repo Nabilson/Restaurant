@@ -48,7 +48,7 @@ $ajaxUtils.sendGetRequest(
 			.innerHTML = request.responseText;
 	},
 	false);
-	console.log(responseText);
+	//console.log(request.responseText);
 });
 
 dc.loadMenuCategories = function () {
