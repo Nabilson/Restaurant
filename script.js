@@ -14,7 +14,8 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"..)
 	var dc = {};
 	var homeHtml = "snippets/home-snippet.html";
 	var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
-	var categoriesTitleHtml = "snippets/Category-snippet.html"
+	var categoriesTitleHtml = "snippets/categories-title-snippet.html";
+	var categoryHtml = "snippets/Category-snippet.html"
 	
 	//convenience function for inserting innerHTML for 'select'
 	var insertHtml = function (selector, html) {
@@ -22,6 +23,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"..)
 		targetElem.innerHTML = html;
 	};
 
+	// Show loading icon inside wlwment identified by selector
 	var showLoading = function (selector) {
 		var html = "<div class='text-center'>";
 		html+= "<img src='ajax-loader.gif'></div>";
@@ -56,17 +58,18 @@ dc.loadMenuCategories = function () {
 	$ajaxUtils.sendGetRequest(allCategoriesUrl,buildAndShowCategoriesHTML);
 };
 
-//
-//
+//Builds HTML for the categories page based on the data
+//from the server
 function buildAndShowCategoriesHTML(categories) {
 	//Builds HTML for the categories page based on the data
 	$ajaxUtils.sendGetRequest(categoriesTitleHtml,
 		function (categoriesTitleHtml) {
-		// Load title snippet of categories page
+		// Retrieve single category snippet
 		$ajaxUtils.sendGetRequest(
 			categoryHtml, function (categoryHtml) {
-				var categoriesViewHtml = buildAndShowCategoriesHTML(categories,
-					categoriesTitleHtml, categoryHtml);
+				var categoriesViewHtml = 
+					buildCategoriesViewHtml(categories,
+						categoriesTitleHtml, categoryHtml);
 				insertHtml("#main-content", categoriesViewHtml);
 			}, false);
 	},false);
