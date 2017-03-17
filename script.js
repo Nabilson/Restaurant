@@ -78,7 +78,7 @@ function buildAndShowCategoriesHTML(categories) {
 
 //
 //
-function buildAndShowCategoriesHTML (categories, categoriesTitleHtml, categoryHtml) {
+function buildCategoriesViewHTML (categories, categoriesTitleHtml, categoryHtml) {
 	var finalHtml = categoriesTitleHtml;
 	finalHtml += "<section class='row'>";
  
