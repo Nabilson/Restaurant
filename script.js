@@ -33,7 +33,7 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"..)
 // with propValue in given 'string'
 var insertProperty = function (string, propName, propValue) {
 	var propToReplace = "{{" + propName + "}}";
-	string = string.replace(new RegExp(propToReplace, "g"), propValue;
+	string = string.replace(new RegExp(propToReplace, "g"), propValue);
 		return string;
 }
 
